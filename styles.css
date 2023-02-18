@@ -78,7 +78,7 @@ p {
 
  
 }
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 992px) {
   .img-fluid {
     display: none;
   }
