@@ -70,12 +70,11 @@ p {
 }
 
 /* Title Image */
-
-.img-fluid {
-  width: 93%;
-  margin-left:0%;
-  position: absolute;
-
+ 
+  .img-fluid {
+    padding-top: 6%;
+    width: 180%;
+    position: absolute;
  
 }
 @media only screen and (max-width: 1400px) {
