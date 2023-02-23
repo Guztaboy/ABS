@@ -1,0 +1,161 @@
+body {
+    font-family: "Montserrat";
+    text-align: center;
+  }
+  
+  .credit{
+    color: grey;
+    font-size: 8px
+  }
+  
+  /* Headings */
+  
+  .big-heading {
+    font-family: "Montserrat";
+    font-size: 3.5rem;
+    line-height: 1.5;
+  }
+  
+  .section-heading {
+    font-size: 3rem;
+    line-height: 1.5;
+  }
+  
+  /* Containers */
+  
+  .container-fluid{
+    padding: 7% 15%;
+  }
+  
+  /* Sections */
+  
+  .colored-section {
+    background-color:#D2001A;
+    color: #fff;
+  }
+  
+  /* Navigation Bar */
+  
+  .navbar {
+    padding: 0 0 4.5rem;
+  }
+  
+  .navbar-brand {
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-item {
+    padding: 0 18px;
+  }
+  
+  .nav-link {
+    font-size: 1.2rem;
+    font-family: "Montserrat-Light";
+  }
+  
+  /* Title Section */
+  
+  #title {
+    background-color: #FF2626;
+    color: #fff;
+    text-align: left;
+  }
+  
+  #title .container-fluid {
+    padding: 3% 15% 7%;
+  }
+  
+  /* Title Image */
+  
+  .img-fluid {
+    padding-top: 20%;
+    width: 180%;
+    position: absolute; 
+   
+  }
+  @media only screen and (max-width: 1400px) {
+    .img-fluid {
+      display: none;
+    }
+  }
+  
+  
+  
+  /* Features Section */
+  .T2{
+    padding-top: 13%;
+    width: 100%;
+  }
+  
+  .T3{
+    background-color: #fff;
+    padding-top: 10%;
+    width: 100%;
+  }
+  
+
+.card__giratorio {
+    margin: auto;
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+}
+
+.card__giratorio-conteudo {
+  margin: auto;
+    position: relative;
+    width: 90%;
+    height: 85%;
+    text-align: center;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+}
+
+.card__giratorio:hover .card__giratorio-conteudo {
+    transform: rotateY(180deg);
+}
+
+.card__giratorio-conteudo--frente,
+.card__giratorio-conteudo--traseira {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card__giratorio-conteudo--frente {
+    background: linear-gradient(-229deg, #D2001A, #fff);
+}
+
+.card__giratorio-conteudo--traseira {
+    background: linear-gradient(229deg, #D2001A, #000);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.card__giratorio-conteudo--traseira h1,
+.card__giratorio-conteudo--traseira p {
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.card__giratorio-conteudo--traseira h1 {
+    font-size: 1.7rem;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    filter: drop-shadow(2px 2px 5px black);
+    opacity: .7;
+}
